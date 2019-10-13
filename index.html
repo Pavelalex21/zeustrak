@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="animate.css">
+</head>
+<body class="index">
+
+	<header class="header">
+		<div class="container">
+			<div class="header-top"><a href="#"><img id="logo" src="img/logo.png" alt="Логотип"></a>
+			<a href="#" id="menu-button">
+				<img src="img/menu_bottom.png" alt="">
+			</a>
+			</div>
+		</div>	
+		<div class="header-bottom" id="menu-block">
+			<div class="header-bottom-container">
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">О продукте</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>	
+		</div>
+	</header>
+	
+	<section class="block_1">
+		<div class="block_1-container">
+			<h1>О компании</h1>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <span id="text_bold">dolore magna aliqua</span>.</p>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit!</h4>
+			<button><a href="#">Купить продукт</a></button>
+		</div>
+	</section>
+
+	<section class="block_2">
+		<div class="block_2-container">
+			<h2>Отзывы наших покупателей</h2>
+			<div class="block_2-container-review">
+				<a>
+					<div class="block_2-container-review-photo wow zoomInUp" data-wow-offset="100" 
+data-wow-delay="0.2s" 
+data-wow-duration="1s"><img src="img/photo.png"></div>
+					<div class="block_2-container-review-text wow bounceIn" data-wow-delay="0.5s" 
+data-wow-duration="1s">
+						<h6>Roger Stevenson</h6>
+						<hr>
+						<p>American skeptic producer and author Brian Dunning believes Polybius to be an urban legend that grew out of exaggerated and distorted tales of an early release version of Tempest that caused problems with photosensitive epilepsy, motion sickness, and vertigo.</p>
+					</div>
+				</a>
+			</div>
+			<div class="block_2-container-review">
+				<a>
+					<div class="block_2-container-review-photo wow zoomInUp" data-wow-delay="0.2s" 
+data-wow-duration="1s"><img src="img/photo.png"></div>
+					<div class="block_2-container-review-text wow bounceIn" ata-wow-delay="0.5s" 
+data-wow-duration="1s">
+						<h6>Roger Stevenson</h6>
+						<hr>
+						<p>American skeptic producer and author Brian Dunning believes Polybius to be an urban legend that grew out of exaggerated and distorted tales of an early release version of Tempest that caused problems with photosensitive epilepsy, motion sickness, and vertigo.</p>
+					</div>
+				</a>
+			</div>
+
+		</div>
+	</section>
+	
+	<section class="block_3">
+		<h2>Часы работы</h2>
+		<div id="grey_bg">
+			<p>пн-пт</p>
+			<p>10-18</p>
+		</div>
+		<div>
+			<p>сб</p>
+			<p>10-16</p>
+		</div>
+		<div id="grey_bg">
+			<p>вс</p>
+			<p>12-16</p>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer-container">
+			<a href="tel:+79999999999">+7 (999) 999 99 99</a>	
+		</div>
+	</footer>
+
+
+
+
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/common.js">
+</script> 
+
+
+<script>
+	window.onload = function () {
+		var a = document.getElementById('menu-button');
+		a.onclick = function() {
+var yourUl = document.getElementById("menu-block");
+yourUl.style.display = yourUl.style.display === 'block' ? '' : 'block';
+		}
+	}
+
+</script> 	
+</body>
+
+</html>
+
+
