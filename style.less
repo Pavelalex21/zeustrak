@@ -154,14 +154,28 @@ a{
 				display: flex;
 				border: 3px solid @grey_bg;
 				padding: 40px;
+				&:hover{
+					border: 3px solid @red_bg;	
+					cursor: pointer;				
+				}
 			}
 			&-photo{
 				padding-right: 40px;
+				img{
+					border: 3px solid transparent;
+					&:hover{
+						border: 3px solid @red_bg;
+		    			border-radius: 45px;		
+					}
+				}
 			}
 			&-text{
 				& h6{
 					font-size: 18px;
 					padding-bottom: 12px;
+					&:hover{
+						color: @red_bg;
+					}
 				}
 				& hr{
 					width: 35px;
@@ -170,6 +184,10 @@ a{
 				}
 				& p{
 					padding-top: 25px;
+					font-style:italic;
+					&:hover{
+						color: @red_bg;
+					}
 				}
 			}
 		}	

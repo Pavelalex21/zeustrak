@@ -152,12 +152,26 @@ a {
   border: 3px solid #dddddd;
   padding: 40px;
 }
+.block_2-container-review a:hover {
+  border: 3px solid #d24a43;
+  cursor: pointer;
+}
 .block_2-container-review-photo {
   padding-right: 40px;
+}
+.block_2-container-review-photo img {
+  border: 3px solid transparent;
+}
+.block_2-container-review-photo img:hover {
+  border: 3px solid #d24a43;
+  border-radius: 45px;
 }
 .block_2-container-review-text h6 {
   font-size: 18px;
   padding-bottom: 12px;
+}
+.block_2-container-review-text h6:hover {
+  color: #d24a43;
 }
 .block_2-container-review-text hr {
   width: 35px;
@@ -166,6 +180,10 @@ a {
 }
 .block_2-container-review-text p {
   padding-top: 25px;
+  font-style: italic;
+}
+.block_2-container-review-text p:hover {
+  color: #d24a43;
 }
 .block_3 {
   padding-bottom: 60px;
